@@ -1,7 +1,10 @@
 namePrefix: kustomize-
 
 resources:
-- guestbook-ui-deployment.yaml
+- guestbook-ui-rollout.yaml
 - guestbook-ui-svc.yaml
+- guestbook-ui-preview-svc.yaml
+- guestbook-ui-ingress.yaml
+- guestbook-ui-preview-ingress.yaml
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
